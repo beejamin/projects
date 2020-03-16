@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://benbiederman.com/</loc>
+  <lastmod>2020-02-25T12:50:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/index.html</loc>
+  <lastmod>2020-02-25T12:50:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/blog.html</loc>
+  <lastmod>2020-02-25T12:46:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/doc/Ben-Biederman-Resume.pdf</loc>
+  <lastmod>2020-02-25T12:46:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/2020-goals.html</loc>
+  <lastmod>2020-02-25T12:46:49+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/funny-thing-about-failure.html</loc>
+  <lastmod>2020-02-25T12:46:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/my-coding-journey-february.html</loc>
+  <lastmod>2020-02-25T12:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/thanks-zuck.html</loc>
+  <lastmod>2020-02-25T12:46:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/blog-january-2020.html</loc>
+  <lastmod>2020-02-25T12:46:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/blog-february-2020.html</loc>
+  <lastmod>2020-02-25T12:46:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/blog-march-2020.html</loc>
+  <lastmod>2020-02-25T12:46:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://benbiederman.com/2020-goals-january.html</loc>
+  <lastmod>2020-02-25T12:46:49+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
