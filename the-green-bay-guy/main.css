@@ -1,0 +1,1519 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", "Helvetica", "sans-serif";
+    color: #111;
+}
+
+ul li {
+    font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+ol li {
+    font-family: "Roboto", "Helvetica", sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+
+
+/* Mobile */
+@media only screen and (min-width: 100px) {
+
+    /* Mobile Index */
+
+    /* Mobile Navigation */
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 12vh;
+        background-color: #111;
+        width: 100%;
+    }
+
+    .mobile h1 a {
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+
+    .logo img {
+        height: 75px;
+    }
+
+
+    .mobile-nav-links {
+        position: absolute;
+        height: 80vh;
+        top: 12vh;
+        background-color: #2B2B2B;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+        z-index: 100;
+
+    }
+
+    .mobile-nav-links a {
+        color: #fcfcfc;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+
+    .mobile-nav-links li {
+        list-style: none;
+        opacity: 0;
+    }
+
+    .mobile-nav-links a:hover {
+        color: #3bb57b;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #3bb57b;
+        margin: 5px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+    }
+
+    .toggle .line-1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+
+    }
+
+    .toggle .line-2 {
+        opacity: 0;
+    }
+
+    .toggle .line-3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+
+    }
+
+    /* Mobile Landing Page */
+    .landing-page {
+        height: 80vh;
+    }
+
+    #index {
+        background-image: url(img/landing-page.jpg);
+        background-size: cover;
+    }
+
+    #podcast {
+        background-image: url(img/podcast-landing-page-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #podcast h3 {
+        padding: 15vh 20px 0px 20px;
+    }
+
+    #recipe {
+        background-image: url(img/recipes-landing-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #learn-more {
+        background-image: url(img/lambeau-field-landing.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 90vh;
+    }
+
+    #learn-more h3 {
+        font-size: 25px;
+        padding: 7vh 20px 3vh 20px;
+    }
+
+
+
+    .landing-page h3 {
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 25vh;
+        color: #fcfcfc;
+        text-shadow: 2px 2px 2px #111;
+    }
+
+    .landing-page h2 {
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        padding: 30px 25px 0px 25px;
+        color: #fcfcfc;
+        text-shadow: 2px 2px 2px #111;
+        text-transform: uppercase;
+    }
+
+    .button {
+        width: 80%;
+        background-color: none;
+        height: 50px;
+        margin: 20px auto;
+        text-align: center;
+        border: 2px solid #3bb57b;
+        background-color: rgba(17, 17, 17, .5);
+        box-shadow: 2px 2px 10px #111;
+
+    }
+
+    .button p {
+        color: #fcfcfc;
+        padding: 10px 2px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 8px #111;
+        font-weight: 600;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+    }
+
+    .button a {
+        font-size: 25px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .button:hover {
+        background-color: #3bb57b;
+    }
+
+    .button-dark {
+        width: 80%;
+        height: 50px;
+        margin: 40px auto;
+        text-align: center;
+        border: 4px solid #3bb57b;
+        background-color: rgba(17, 17, 17, .8);
+        box-shadow: 2px 2px 5px #111;
+
+    }
+
+    .button-dark p {
+        color: #fcfcfc;
+        padding: 10px 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        text-shadow: 2px 2px 7px #111;
+
+    }
+
+    .button-dark a {
+        font-size: 25px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .button-dark:hover {
+        background-color: #3bb57b;
+    }
+
+
+
+    /* Mobile Go-To Places */
+    .content-section {
+        text-align: center
+    }
+
+    .content-section h3 {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        padding: 0 50px;
+    }
+
+    .content {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .content h5 {
+        font-size: 20px;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    .read-more p:hover {
+        color: #3bb57b;
+    }
+
+
+    .content img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .locals-guide-icons {
+        width: 100%;
+        text-align: left;
+        margin-top: -40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .locals-guide-icons img {
+        width: 35px;
+    }
+
+    .read-more {
+        width: 100%;
+        display: block;
+    }
+
+    .read-more p {
+        font-size: 18px;
+        margin-top: -28px;
+        text-align: right;
+        padding-right: 10px;
+        color: #fcfcfc;
+        text-shadow: 2px 2px 10px #111;
+        text-transform: uppercase;
+    }
+
+    .content a {
+        text-decoration: none;
+    }
+
+    /* Mobile index contact info */
+    .contact-info {
+        background-color: #111;
+        margin: 50px 0 20px 0;
+        text-align: center
+    }
+
+    .help {
+        width: 100%;
+    }
+
+    .contact-info h5 {
+        color: #3bb57b;
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-top: 30px;
+    }
+
+    .contact-info p {
+        font-size: 18px;
+        color: #fcfcfc;
+        padding: 40px 40px 10px 40px;
+        word-spacing: 1px;
+        font-weight: 400;
+
+    }
+
+    .phone-contact p {
+        padding-top: 40px;
+        font-size: 20px;
+    }
+
+    .phone-contact a {
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+
+    .phone-contact a:hover {
+        color: #3bb57b;
+    }
+
+    .email-contact p {
+        padding: 10px 0px 50px 0px;
+        font-size: 20px;
+    }
+
+    .email-contact a {
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+
+    .email-contact a:hover {
+        color: #3bb57b;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    /* Mobile Local's Guide */
+    .lg-eat {
+        height: 19vh;
+        background-image: url(img/Locals-Guide/Eat/eat-background.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .lg-drink {
+        height: 19vh;
+        background-image: url(img/Locals-Guide/Drink/drink-background.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .lg-see {
+        height: 19vh;
+        background-image: url(img/Locals-Guide/See/see-background.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .lg-misc {
+        height: 19vh;
+        background-image: url(img/Locals-Guide/Misc/misc-background.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        margin: 5px 0px -35px 0px;
+    }
+
+
+    #lg-landing h4 {
+        color: #fcfcfc;
+        font-size: 35px;
+        text-transform: uppercase;
+        padding: 7vh 0px;
+        display: block;
+    }
+
+    #lg-landing a {
+        text-decoration: none;
+    }
+
+    #lg-landing h4:hover {
+        color: #3bb57b;
+    }
+
+    #lg-landing:hover {
+        box-shadow: 2px 2px 5px #111;
+    }
+
+
+
+    /* Mobile Local's Guide Pages */
+    /* Dropdown Button */
+
+    .locals-guide-menu {
+        z-index: 5;
+        position: relative;
+        width: 100%;
+        text-align: center
+    }
+
+    .locals-guide-drop {
+        z-index: 4;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 2px;
+    }
+
+    .locals-dropbtn {
+        background-color: #111;
+        color: white;
+        padding: 16px;
+        font-size: 18px;
+        border: 1px solid #111;
+        width: 100%;
+        font-family: "Roboto", "Helvetica", "sans-serif";
+        font-weight: 400;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .locals-dropdown {
+        position: relative;
+        display: inline-block;
+        width: 90%;
+        z-index: 1;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .locals-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2B2B2B;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        font-family: "Roboto", "Helvetica", "sans-serif";
+        font-size: 18px;
+    }
+
+    /* Links inside the dropdown */
+    .locals-dropdown-content a {
+        color: #fcfcfc;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        border: 1px;
+        border-color: #111;
+        border-style: solid;
+        font-weight: 400;
+    }
+
+    /* Change color of dropdown links on hover */
+    .locals-dropdown-content a:hover {
+        color: #3bb57b;
+    }
+
+    /* Show the dropdown menu on hover */
+    .locals-dropdown:hover .locals-dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .locals-dropdown:hover .locals-dropbtn {
+        background-color: #111;
+    }
+
+
+
+
+    /* Mobile Individual Local Guide */
+    .blog-header {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .blog-header img {
+        width: 95%;
+        object-fit: cover;
+        margin-top: 5%;
+    }
+
+    .blog-header h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 5%;
+    }
+
+    .blog-header h3 {
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .blog-header h5 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 5vh;
+    }
+
+    .blog-header li {
+        font-size: 18px;
+        padding: 2px 20px;
+        font-weight: 300;
+
+    }
+
+    .blog-content {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .blog-content img {
+        width: 100%;
+        object-fit: cover;
+        margin-top: 5%;
+    }
+
+    .blog-content p {
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .blog-content h5 {
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 5%;
+    }
+
+    .blog-content h4 {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .blog-content h3 {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 10%;
+        text-align: center;
+    }
+
+    .blog-content ol {
+        padding: 10px 20px;
+    }
+
+    #gd-recipe li {
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: none;
+        text-align: left;
+        padding: 2px 20px;
+    }
+
+    #gd-recipe p {
+        padding: 2px 20px;
+    }
+
+    #gd-recipe h5 {
+        padding: 2px 20px;
+    }
+
+    .line-1 {
+        height: 2px;
+        width: 80%;
+        background-color: #c9c9c9;
+        margin: 5% auto;
+    }
+
+    .line-2 {
+        height: 2px;
+        width: 60%;
+        background-color: #c9c9c9;
+        margin: 5% auto;
+    }
+
+    .blog-content h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .blog-content h6 {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .blog-content ul {
+        list-style: none;
+    }
+
+    .blog-content li {
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .blog-content a {
+        color: #111;
+        text-decoration: underline;
+    }
+
+    .blog-content a:hover {
+        color: #3bb57b;
+    }
+
+    .blog-ender {
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 5%;
+    }
+
+
+    .blog-ender h4 {
+        font-size: 25px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 5%;
+        text-align: center;
+        padding: 0 3%;
+
+    }
+
+    figcaption {
+        font-family: "Roboto", "Helvetica", sans-serif;
+        font-weight: 300;
+    }
+
+    .podcast-player {
+        margin-top: 5%;
+    }
+
+    /* Mobile 404 */
+    .error {
+        height: 70vh;
+        background-color: white;
+        width: 85%;
+        margin: 5vh auto;
+        box-shadow: 2px 2px 15px #dedede;
+        text-align: center;
+    }
+
+    .error img {
+        width: 100px;
+        margin: 50px 0 20px 0;
+
+    }
+
+    .error h3 {
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    .error h6 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 30px;
+        padding: 0 30px;
+
+    }
+
+    .button-white {
+        width: 80%;
+        background-color: none;
+        height: 50px;
+        margin: 40px auto;
+        text-align: center;
+        border: 2px solid #111;
+        box-shadow: 2px 2px 15px #dedede;
+        background-color: rgba(17, 17, 17, .1);
+
+    }
+
+    .button-white p {
+        color: #111;
+        padding: 10px 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+        word-spacing: 5px;
+    }
+
+    .button-white a {
+        font-size: 25px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .button-white:hover {
+        border: 2px solid #3bb57b;
+    }
+
+    .button-white p:hover {
+        color: #3bb57b;
+    }
+
+
+
+
+    /* Mobile Footer */
+    .desktop-footer {
+        display: none;
+    }
+
+    footer {
+        background-color: #111;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    footer p {
+        color: #fcfcfc;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    footer a {
+        font-weight: 300;
+        font-size: 18px;
+        color: #fcfcfc;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .mobile-footer a {
+        text-transform: uppercase;
+    }
+
+    .mobile-footer p {
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    footer a:hover {
+        color: #3bb57b;
+    }
+
+    .footer-social-media img {
+        width: 35px;
+        margin: 0px 5px 20px 5px;
+    }
+
+    .disclaimer p {
+        font-size: 18px;
+        padding: 40px 20px 0px 20px;
+        ;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* Tablet Starts */
+@media only screen and (min-width: 768px) {
+
+
+    /* Tablet Landing Page */
+    .landing-page {
+        height: 65vh;
+    }
+
+    #index {
+        background-image: url(img/Lambeau-game.jpg);
+        background-position: top;
+    }
+
+    #podcast {
+        background-image: url(img/podcast-landing-page.jpg);
+        background-position: center;
+    }
+
+    #podcast h3 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #podcast h2 {
+        padding: 10% 5% 0% 5%;
+    }
+
+    #recipe {
+        background-image: url(img/recipes-landing.jpg);
+        background-position: center;
+    }
+
+    .landing-page h3 {
+        font-size: 30px;
+        padding-top: 18%;
+    }
+
+    .landing-page h2 {
+        margin-top: -20px;
+    }
+
+
+    .button {
+        width: 60%;
+        background-color: rgba(17, 17, 17, .8);
+
+    }
+
+    .button-dark {
+        width: 60%;
+
+    }
+
+    /* Tablet Go-To Places */
+    .content-section h3 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .content {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .content h5 {
+        font-size: 25px;
+    }
+
+
+    .locals-guide-icons {
+        width: 100%;
+        margin-top: -55px;
+    }
+
+    .locals-guide-icons img {
+        width: 45px;
+    }
+
+    .read-more p {
+        font-size: 25px;
+        margin-top: -40px;
+    }
+
+
+    /* Tablet index contact info */
+    .help {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contact-info h5 {
+        text-align: left;
+        padding-left: 50px;
+        +
+    }
+
+    .phone-contact {
+        display: inline-block;
+
+    }
+
+    .email-contact {
+        display: inline-block;
+    }
+
+    .slash {
+        display: inline-block;
+    }
+
+    .slash p {
+        padding: 0px 10px;
+    }
+
+    .phone-contact p {
+        padding: 50px 0px;
+    }
+
+
+    .email-contact p {
+        padding: 50px 0px;
+    }
+
+    /* Tablet index contact info */
+    .contact-info {
+        background-color: #111;
+        margin: 50px 0 20px 0;
+        text-align: center
+    }
+
+    .help {
+        width: 100%;
+    }
+
+    .contact-info h5 {
+        color: #3bb57b;
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-top: 30px;
+    }
+
+    .contact-info p {
+        font-size: 18px;
+        color: #fcfcfc;
+        padding: 40px 40px 40px 40px;
+        word-spacing: 1px;
+        font-weight: 400;
+
+    }
+
+    .phone-contact p {
+        padding-top: 40px;
+        font-size: 20px;
+        padding: 10px 0px 50px 0px;
+    }
+
+    .phone-contact a {
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+
+    .phone-contact a:hover {
+        color: #3bb57b;
+    }
+
+    .email-contact p {
+        padding: 10px 0px 50px 0px;
+        font-size: 20px;
+    }
+
+    .email-contact a {
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+
+    .email-contact a:hover {
+        color: #3bb57b;
+    }
+
+    .slash {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .slash p {
+        padding: 10px 10px 50px 10px;
+    }
+
+    /* Tablet Local's Guide Pages */
+    .locals-dropdown {
+        width: 50%;
+    }
+
+    .disclaimer {
+        width: 70%;
+        margin: 0 auto;
+        font-weight: 300;
+    }
+
+    /* Tablet Individual Local Guide */
+    .blog-header {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .blog-header img {
+        width: 70%;
+    }
+
+    .blog-header h2 {
+        font-size: 25px;
+    }
+
+    .blog-header h3 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .blog-content {
+        width: 70%;
+    }
+
+    .podcast-player {
+        margin: 5% auto;
+        width: 90%;
+    }
+
+    /* Mobile 404 */
+
+    .error img {
+        width: 100px;
+        margin: 120px 0 20px 0;
+
+    }
+
+
+    .button-white {
+        width: 60%;
+
+    }
+
+
+
+
+
+
+
+    /* Tablet Footer */
+    .desktop-footer {
+        display: none;
+    }
+
+    footer {
+        background-color: #111;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    footer p {
+        color: #fcfcfc;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    footer a {
+        font-weight: 300;
+        font-size: 18px;
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+
+    .mobile-footer p {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .mobile-footer a:hover {
+        color: #3bb57b;
+    }
+
+    .footer-social-media img {
+        width: 40px;
+        margin: 10px 10px 30px 10px;
+    }
+
+
+
+}
+
+
+
+
+/*Desktop Starts */
+@media only screen and (min-width: 1025px) {
+    .desktop {
+        display: block;
+        background-color: black;
+        min-height: 12vh;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .logo {
+        width: 18%;
+        display: inline-block;
+        text-align: center
+    }
+
+    .logo img {
+        padding: 5px;
+        height: 100px;
+    }
+
+    .nav-links {
+        width: 63%;
+        display: inline-block;
+        text-align: center;
+        min-height: 12vh;
+        vertical-align: top;
+
+    }
+
+    .nav-links li {
+        display: inline-block;
+        color: #fcfcfc;
+        padding: 0 8px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin-top: 80px;
+
+    }
+
+    .nav-links a {
+        color: #fcfcfc;
+        text-decoration: none;
+    }
+
+    .nav-links a:hover {
+        color: #3bb57b;
+        text-decoration: underline;
+    }
+
+    .social-media {
+        width: 18%;
+        display: inline-block;
+        text-align: right;
+        min-height: 12vh;
+        vertical-align: top;
+    }
+
+    .social-media img {
+        width: 30px;
+        height: auto;
+        padding: 10px 1px;
+
+    }
+
+    /* Desktop Landing Page  */
+    .landing-page {
+        height: 82vh;
+    }
+
+    #podcast h3 {
+        padding-top: 25vh;
+    }
+
+    #podcast h2 {
+        padding: 60px 80px 10px 80px;
+    }
+
+    .landing-page h3 {
+        font-size: 35px;
+        padding-top: 12%;
+    }
+
+    .landing-page h2 {
+        font-size: 25px;
+    }
+
+
+    .button {
+        width: 30%;
+    }
+
+    .button-dark {
+        width: 30%;
+    }
+
+    /* Desktop Go-To Places */
+    .content-section h3 {
+        font-size: 30px;
+    }
+
+    .content {
+        width: 60%;
+        margin-top: 60px;
+    }
+
+
+    .locals-guide-icons {
+        width: 98%;
+    }
+
+    .read-more p {
+        font-size: 20px;
+        margin-top: -30px;
+    }
+
+    /* Desktop index contact info */
+    .help {
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .contact-info h5 {
+        text-align: left;
+        padding-left: 45px;
+    }
+
+    .contact-info p {
+        padding-top: 20px;
+    }
+
+    .phone-contact {
+        display: inline-block;
+    }
+
+    .email-contact {
+        display: inline-block;
+    }
+
+    .slash {
+        display: inline-block;
+    }
+
+    .slash p {
+        padding: 0px 10px;
+    }
+
+    .phone-contact p {
+        padding: 40px 0px;
+        text-transform: uppercase;
+    }
+
+    .phone-contact a {
+        font-weight: 300;
+        text-transform: none;
+    }
+
+
+    .email-contact p {
+        padding: 40px 0px;
+        text-transform: uppercase;
+    }
+
+    .email-contact a {
+        font-weight: 300;
+        text-transform: none;
+    }
+
+    /* Desktop Local's Guide */
+
+    .local-guide-landing {
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .lg-eat {
+        height: 80vh;
+        width: 24.70%;
+    }
+
+    .lg-drink {
+        height: 80vh;
+        width: 24.70%;
+    }
+
+    .lg-see {
+        height: 80vh;
+        width: 24.70%;
+    }
+
+    .lg-misc {
+        height: 80vh;
+        width: 24.70%;
+    }
+
+    #lg-landing {
+        margin-bottom: -35px;
+        display: inline-block;
+    }
+
+
+    #lg-landing h4 {
+        padding: 37vh 0px;
+    }
+
+    /* Desktop Local's Guide Pages */
+    .locals-dropdown {
+        width: 40%;
+        margin-top: 5px;
+    }
+
+    .disclaimer {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .disclaimer p {
+        padding: 50px 0px 0px 0px;
+
+    }
+
+
+    /* Desktop Individual Local Guide */
+    .blog-header {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .blog-header img {
+        width: 60%;
+        object-fit: cover;
+        margin-top: 2%;
+    }
+
+    .blog-header h2 {
+        font-size: 30px;
+        margin-top: 2%;
+    }
+
+    .blog-header h3 {
+        font-size: 25px;
+    }
+
+    .blog-content {
+        width: 65%;
+        margin: 2% auto;
+        text-align: center;
+    }
+
+    .blog-content h5 {
+        margin-top: 2%;
+        text-align: left;
+    }
+
+    .blog-content p {
+        text-align: left;
+    }
+
+    .blog-content h4 {
+        margin-top: 2%;
+    }
+
+    .blog-content h3 {
+        margin-top: 3%;
+    }
+
+    .line-1 {
+        width: 80%;
+        margin: 2% auto;
+    }
+
+    .line-2 {
+        width: 60%;
+        margin: 2% auto;
+    }
+
+    .blog-content h2 {
+        margin-top: 2%;
+    }
+
+
+    .blog-content img {
+        width: 80%;
+
+    }
+
+
+
+    .blog-ender {
+        width: 100%;
+        padding-bottom: 2%;
+    }
+
+
+    .blog-ender h4 {
+        margin-top: 2%;
+        text-align: left;
+        padding: 0 20%;
+        margin-bottom: -3%;
+
+    }
+
+    .podcast-player {
+        margin: 2% auto;
+        width: 70%;
+    }
+
+    /* 404 Desktop */
+    .error img {
+        width: 150px;
+        margin: 80px 0 20px 0;
+
+    }
+
+    .error h6 {
+        margin-top: 15px;
+    }
+
+
+    .button-white {
+        width: 30%;
+
+    }
+
+    /* Desktop Footer */
+    .mobile-footer {
+        display: none;
+    }
+
+    footer {
+        background-color: black;
+    }
+
+    .desktop-footer {
+        display: block;
+        width: 100%;
+    }
+
+    .desktop-footer li {
+        margin-top: 40px;
+        display: inline-block;
+        color: #fcfcfc;
+        padding: 0 8px;
+        letter-spacing: 1px;
+        font-weight: 300;
+    }
+
+
+    .phone-contact p {
+        font-size: 18px;
+    }
+
+    .phone-contact a {
+        font-size: 18px;
+    }
+
+    .email-contact p {
+        font-size: 18px;
+    }
+
+    .email-contact a {
+        font-size: 18px;
+    }
+
+    .desktop-footer a {
+        font-size: 16px;
+    }
+
+
+    .footer-social-media img {
+        width: 35px;
+        margin: 10px 5px;
+    }
+
+
+
+
+
+
+
+}
